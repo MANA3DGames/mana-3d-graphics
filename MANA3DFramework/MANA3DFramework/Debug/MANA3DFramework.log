@@ -1,0 +1,33 @@
+﻿  Camera.cpp
+  Component.cpp
+  Debug.cpp
+  FBXImporter.cpp
+  GameFramework.cpp
+  GameObject.cpp
+  GUI.cpp
+  Input.cpp
+  Main.cpp
+  Mathf.cpp
+  Matrix3.cpp
+  Matrix4.cpp
+  Matrix4X4.cpp
+  Mesh.cpp
+  MeshRenderer.cpp
+  MString.cpp
+  Particle.cpp
+c:\users\mahmoud\documents\github\mana3dgraphcis\mana3dframework\mana3dframework\mana3d\particle.cpp(69): warning C4056: overflow in floating-point constant arithmetic
+  PhysicsData.cpp
+  Quaternion.cpp
+  Renderer.cpp
+  Generating Code...
+c:\users\mahmoud\documents\github\mana3dgraphcis\mana3dframework\mana3dframework\mana3d\mstring.cpp(184): warning C4172: returning address of local variable or temporary: wc
+  Compiling...
+  Screen.cpp
+  Texture.cpp
+  TextureImporter.cpp
+  Time.cpp
+  Transform.cpp
+  Vector3.cpp
+  Win32App.cpp
+  Generating Code...
+LINK : fatal error LNK1104: cannot open file 'libfbxsdk.lib'

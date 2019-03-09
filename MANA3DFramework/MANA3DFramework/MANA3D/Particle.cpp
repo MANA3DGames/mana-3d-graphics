@@ -1,0 +1,182 @@
+/*
+ * Implementation file for the particle class.
+ * 
+ * Part of the Cyclone physics system.
+ * 
+ * Copyright (c) Icosagon 2003. All Rights Reserved.
+ *
+ * This software is distributed under licence. Use of this software
+ * implies agreement with all terms and conditions of the accompanying
+ * software licence.
+ */
+
+///>ParticleIntegrate
+#include <assert.h>
+///<ParticleIntegrate
+///>ParticleSrc
+#include "Particle.h"
+using namespace MANA3D;
+
+///<ParticleSrc
+
+/*
+ * --------------------------------------------------------------------------
+ * FUNCTIONS DECLARED IN HEADER:
+ * --------------------------------------------------------------------------
+ */
+
+///>ParticleAccum
+///>ParticleIntegrate
+void Particle::integrate(float duration)
+{
+	// We don't integrate things with zero mass.
+	if (inverseMass <= 0.0f) return;
+
+    assert(duration > 0.0);
+
+    // Update linear position.
+    position.addScaledVector(velocity, duration);
+
+    // Work out the acceleration from the force
+    Vector3 resultingAcc = acceleration;
+    resultingAcc.addScaledVector(forceAccum, inverseMass);
+    
+    // Update linear velocity from the acceleration.
+    velocity.addScaledVector(resultingAcc, duration);
+
+    // Impose drag.
+    velocity *= powf(damping, duration);
+///<ParticleIntegrate
+
+    // Clear the forces.
+    clearAccumulator();
+///>ParticleIntegrate
+}
+///<ParticleIntegrate
+
+///<ParticleAccum
+
+
+void Particle::setMass(const float mass)
+{
+    assert(mass != 0);
+    Particle::inverseMass = 1.0f/mass;
+}
+
+float Particle::getMass() const
+{
+    if (inverseMass == 0) {
+        return DBL_MAX;
+    } else {
+        return 1.0f/inverseMass;
+    }
+}
+
+void Particle::setInverseMass(const float inverseMass)
+{
+    Particle::inverseMass = inverseMass;
+}
+
+float Particle::getInverseMass() const
+{
+    return inverseMass;
+}
+
+bool Particle::hasFiniteMass() const
+{
+    return inverseMass >= 0.0f;
+}
+
+void Particle::setDamping(const float damping)
+{
+    Particle::damping = damping;
+}
+
+float Particle::getDamping() const
+{
+    return damping;
+}
+
+void Particle::setPosition(const Vector3 &position)
+{
+    Particle::position = position;
+}
+
+void Particle::setPosition(const float x, const float y, const float z)
+{
+    position.x = x;
+    position.y = y;
+    position.z = z;
+}
+
+void Particle::getPosition(Vector3 *position) const
+{
+    *position = Particle::position;
+}
+
+Vector3 Particle::getPosition() const
+{
+    return position;
+}
+
+void Particle::setVelocity(const Vector3 &velocity)
+{
+    Particle::velocity = velocity;
+}
+
+void Particle::setVelocity(const float x, const float y, const float z)
+{
+    velocity.x = x;
+    velocity.y = y;
+    velocity.z = z;
+}
+
+void Particle::getVelocity(Vector3 *velocity) const
+{
+    *velocity = Particle::velocity;
+}
+
+Vector3 Particle::getVelocity() const
+{
+    return velocity;
+}
+
+void Particle::setAcceleration(const Vector3 &acceleration)
+{
+    Particle::acceleration = acceleration;
+}
+
+void Particle::setAcceleration(const float x, const float y, const float z)
+{
+    acceleration.x = x;
+    acceleration.y = y;
+    acceleration.z = z;
+}
+
+void Particle::getAcceleration(Vector3 *acceleration) const
+{
+    *acceleration = Particle::acceleration;
+}
+
+Vector3 Particle::getAcceleration() const
+{
+    return acceleration;
+}
+
+///>ParticleAccum
+void Particle::clearAccumulator()
+{
+    forceAccum.clear();
+}
+///<ParticleAccum
+
+///>ParticleAddForce
+void Particle::addForce(const Vector3 &force)
+{
+    forceAccum += force;
+}
+///<ParticleAddForce
+
+
+
+

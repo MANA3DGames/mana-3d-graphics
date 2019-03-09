@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Component">
+      <UniqueIdentifier>{58f25e47-7a7d-41c4-870e-97322d1624d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Component">
+      <UniqueIdentifier>{11e3226e-c2c4-4fa0-a1c2-b36001667d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CoreData">
+      <UniqueIdentifier>{028eb779-9578-40fa-9b5b-afcbd1fa1cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\CoreData">
+      <UniqueIdentifier>{094d84d8-7557-4701-b546-a5949fd69067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{2524dee1-8ccc-4379-99d3-b787681f10b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework">
+      <UniqueIdentifier>{118bf910-3c4c-483b-a613-54ec1ede30c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI">
+      <UniqueIdentifier>{973c80eb-7148-452b-8de8-faa2cd9fbd48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{c668672a-31c5-4e49-a9c1-84f8e8a0958f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Importer">
+      <UniqueIdentifier>{a01f26c1-14ce-4ec1-b6ed-dc877814e239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Importer">
+      <UniqueIdentifier>{67a26c62-4c05-44ad-b099-9e109437fa21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{2c9fef5f-0362-4a17-b72a-16e183729171}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{e008fa87-97b7-4405-98e4-e835b311ee34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math3D">
+      <UniqueIdentifier>{f58b37cf-4690-46a0-b053-1af11f61fe80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math3D">
+      <UniqueIdentifier>{7302d27a-f623-4a0e-88ca-f3df3ffd90dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physics">
+      <UniqueIdentifier>{4a40bde7-95d3-453f-876e-e2ad7d5c0dc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physics">
+      <UniqueIdentifier>{1a7bd5f9-5a7b-4447-9aa2-a7e4bc75320f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{ce16c7e6-0064-4db8-aca2-2174112c08f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{8512ca2d-fb92-478e-83ab-6a2ade48a1fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MANA3D\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Camera.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Component.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\MeshRenderer.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Renderer.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Transform.cpp">
+      <Filter>Source Files\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\GameObject.cpp">
+      <Filter>Source Files\CoreData</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Mesh.cpp">
+      <Filter>Source Files\CoreData</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\MString.cpp">
+      <Filter>Source Files\CoreData</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Texture.cpp">
+      <Filter>Source Files\CoreData</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\GameFramework.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Win32App.cpp">
+      <Filter>Source Files\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\GUI.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\FBXImporter.cpp">
+      <Filter>Source Files\Importer</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\TextureImporter.cpp">
+      <Filter>Source Files\Importer</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Input.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Mathf.cpp">
+      <Filter>Source Files\Math3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Matrix3.cpp">
+      <Filter>Source Files\Math3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Matrix4.cpp">
+      <Filter>Source Files\Math3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Matrix4X4.cpp">
+      <Filter>Source Files\Math3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Vector3.cpp">
+      <Filter>Source Files\Math3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Quaternion.cpp">
+      <Filter>Source Files\Math3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Particle.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\PhysicsData.cpp">
+      <Filter>Source Files\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Debug.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Screen.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="MANA3D\Time.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MANA3D\Camera.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Component.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\MeshRenderer.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Renderer.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Transform.h">
+      <Filter>Header Files\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\GameObject.h">
+      <Filter>Header Files\CoreData</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Mesh.h">
+      <Filter>Header Files\CoreData</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\MString.h">
+      <Filter>Header Files\CoreData</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Texture.h">
+      <Filter>Header Files\CoreData</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\GameFramework.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\MANA3DEngine.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Win32App.h">
+      <Filter>Header Files\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\GUI.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\FBXImporter.h">
+      <Filter>Header Files\Importer</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\TextureImporter.h">
+      <Filter>Header Files\Importer</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Input.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Math3D.h">
+      <Filter>Header Files\Math3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Mathf.h">
+      <Filter>Header Files\Math3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Matrix3.h">
+      <Filter>Header Files\Math3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Matrix4.h">
+      <Filter>Header Files\Math3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Matrix4X4.h">
+      <Filter>Header Files\Math3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Quaternion.h">
+      <Filter>Header Files\Math3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Vector3.h">
+      <Filter>Header Files\Math3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Particle.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Physics3D.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\PhysicsData.h">
+      <Filter>Header Files\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Debug.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Screen.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="MANA3D\Time.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

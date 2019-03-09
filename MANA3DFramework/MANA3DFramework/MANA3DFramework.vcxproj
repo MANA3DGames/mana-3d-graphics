@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C203ED1F-03AC-4A5E-A924-D66664AEC3F3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MANA3DFramework</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;K_PLUGIN;K_FBXSDK;FBXSDK_SHARED;F_NODLL_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\\MANA3DFramework\Libraries\jpeglib\include;..\\MANA3DFramework\Libraries\FBX SDK\2016.1\include;..\\MANA3DFramework\Libraries\DevIL-SDK-x86-1.7.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\\MANA3DFramework\Libraries\FBX SDK\2016.1\lib\vs2010\x86\release;..\\MANA3DFramework\Libraries\FBX SDK\2016.1\lib\vs2010\x86\debug;..\\MANA3DFramework\Libraries\DevIL-SDK-x86-1.7.8\lib\unicode;..\\MANA3DFramework\Libraries\DevIL-SDK-x86-1.7.8\lib;..\\MANA3DFramework\Libraries\jpeglib\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="MANA3D\Camera.cpp" />
+    <ClCompile Include="MANA3D\Component.cpp" />
+    <ClCompile Include="MANA3D\Debug.cpp" />
+    <ClCompile Include="MANA3D\FBXImporter.cpp" />
+    <ClCompile Include="MANA3D\GameFramework.cpp" />
+    <ClCompile Include="MANA3D\GameObject.cpp" />
+    <ClCompile Include="MANA3D\GUI.cpp" />
+    <ClCompile Include="MANA3D\Input.cpp" />
+    <ClCompile Include="MANA3D\Main.cpp" />
+    <ClCompile Include="MANA3D\Mathf.cpp" />
+    <ClCompile Include="MANA3D\Matrix3.cpp" />
+    <ClCompile Include="MANA3D\Matrix4.cpp" />
+    <ClCompile Include="MANA3D\Matrix4X4.cpp" />
+    <ClCompile Include="MANA3D\Mesh.cpp" />
+    <ClCompile Include="MANA3D\MeshRenderer.cpp" />
+    <ClCompile Include="MANA3D\MString.cpp" />
+    <ClCompile Include="MANA3D\Particle.cpp" />
+    <ClCompile Include="MANA3D\PhysicsData.cpp" />
+    <ClCompile Include="MANA3D\Quaternion.cpp" />
+    <ClCompile Include="MANA3D\Renderer.cpp" />
+    <ClCompile Include="MANA3D\Screen.cpp" />
+    <ClCompile Include="MANA3D\Texture.cpp" />
+    <ClCompile Include="MANA3D\TextureImporter.cpp" />
+    <ClCompile Include="MANA3D\Time.cpp" />
+    <ClCompile Include="MANA3D\Transform.cpp" />
+    <ClCompile Include="MANA3D\Vector3.cpp" />
+    <ClCompile Include="MANA3D\Win32App.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MANA3D\Camera.h" />
+    <ClInclude Include="MANA3D\Component.h" />
+    <ClInclude Include="MANA3D\Debug.h" />
+    <ClInclude Include="MANA3D\FBXImporter.h" />
+    <ClInclude Include="MANA3D\GameFramework.h" />
+    <ClInclude Include="MANA3D\GameObject.h" />
+    <ClInclude Include="MANA3D\GUI.h" />
+    <ClInclude Include="MANA3D\Input.h" />
+    <ClInclude Include="MANA3D\MANA3DEngine.h" />
+    <ClInclude Include="MANA3D\Math3D.h" />
+    <ClInclude Include="MANA3D\Mathf.h" />
+    <ClInclude Include="MANA3D\Matrix3.h" />
+    <ClInclude Include="MANA3D\Matrix4.h" />
+    <ClInclude Include="MANA3D\Matrix4X4.h" />
+    <ClInclude Include="MANA3D\Mesh.h" />
+    <ClInclude Include="MANA3D\MeshRenderer.h" />
+    <ClInclude Include="MANA3D\MString.h" />
+    <ClInclude Include="MANA3D\Particle.h" />
+    <ClInclude Include="MANA3D\Physics3D.h" />
+    <ClInclude Include="MANA3D\PhysicsData.h" />
+    <ClInclude Include="MANA3D\Quaternion.h" />
+    <ClInclude Include="MANA3D\Renderer.h" />
+    <ClInclude Include="MANA3D\Screen.h" />
+    <ClInclude Include="MANA3D\Texture.h" />
+    <ClInclude Include="MANA3D\TextureImporter.h" />
+    <ClInclude Include="MANA3D\Time.h" />
+    <ClInclude Include="MANA3D\Transform.h" />
+    <ClInclude Include="MANA3D\Vector3.h" />
+    <ClInclude Include="MANA3D\Win32App.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
